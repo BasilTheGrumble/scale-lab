@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Scale Lab: local artifacts
+.DS_Store
+.env.*
+!.env.example
+data/
+artifacts/
