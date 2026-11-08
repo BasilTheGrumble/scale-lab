@@ -1,11 +1,17 @@
-
 {
   "name": "Scale Lab",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
+  "dockerComposeFile": [
+    "../compose.yaml",
+    "compose.devcontainer.yaml"
+  ],
+  "service": "devcontainer",
+  "runServices": [
+    "devcontainer",
+    "postgres",
+    "kafka"
+  ],
   "workspaceFolder": "/workspaces/scale-lab",
+  "shutdownAction": "stopCompose",
   "postCreateCommand": "uv sync --dev --locked",
   "customizations": {
     "vscode": {
