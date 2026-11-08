@@ -9,6 +9,7 @@ RUN apt-get update \
         build-essential \
         ca-certificates \
         openssh-client \
+        ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 ENV UV_LINK_MODE=copy
