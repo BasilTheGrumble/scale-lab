@@ -2,13 +2,21 @@
 name = "scale-lab"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
-dependencies = []
+dependencies = [
+    "boto3>=1.43.126",
+    "fastapi>=0.162.2",
+    "psycopg[binary,pool]>=3.3.8",
+    "pydantic-settings>=2.16.2",
+    "python-multipart>=0.0.33",
+    "uvicorn[standard]>=0.54.0",
+]
 
 [dependency-groups]
 dev = [
     "pre-commit>=4.7.0",
     "pytest>=9.2.0",
     "ruff>=0.17.4",
+    "types-boto3-s3>=1.43.106",
 ]
 
 [tool.ruff]

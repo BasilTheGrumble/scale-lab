@@ -2,14 +2,18 @@ CREATE TABLE jobs (
     job_id UUID PRIMARY KEY,
     run_id UUID,
     file_id TEXT NOT NULL,
+    input_object_key TEXT,
 
     status TEXT NOT NULL DEFAULT 'pending'
-        CHECK (status IN (
+    CHECK (
+        status IN (
+            'uploading',
             'pending',
             'processing',
             'completed',
             'failed'
-        )),
+        )
+    ),
 
     received_at TIMESTAMPTZ NOT NULL,
     published_at TIMESTAMPTZ,
