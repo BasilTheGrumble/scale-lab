@@ -1,0 +1,83 @@
+# Build context only: runtime bind mounts are unaffected.
+# Keep source, tests, SQL, pyproject.toml, uv.lock, and build configuration.
+
+# Git metadata and local editor settings
+**/.git
+**/.idea
+**/.vscode
+**/.DS_Store
+**/tempCodeRunnerFile.py
+
+# Local credentials and environment settings (keep the example template)
+**/.env
+**/.env.*
+!**/.env.example
+**/.envrc
+**/.pypirc
+**/.netrc
+**/.aws
+**/.ssh
+**/secrets
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+
+# Local Python environments and compiled bytecode
+**/.venv
+**/venv
+**/env
+**/ENV
+**/env.bak
+**/venv.bak
+**/__pypackages__
+**/__pycache__
+**/*.py[cod]
+
+# Tool caches and test reports
+**/.cache
+**/.pytest_cache
+**/.ruff_cache
+**/.mypy_cache
+**/.hypothesis
+**/.tox
+**/.nox
+**/.pyre
+**/.pytype
+**/.ipynb_checkpoints
+**/.coverage
+**/.coverage.*
+**/coverage.xml
+**/htmlcov
+
+# Generated packages, logs, and local experiment outputs
+/build
+/dist
+**/*.egg-info
+**/*.egg
+**/*.log
+/data
+/artifacts
+
+# Local AI instructions, context, and conversation history
+**/[Aa][Gg][Ee][Nn][Tt][Ss].md
+**/[Aa][Gg][Ee][Nn][Tt][Ss].local.md
+**/[Cc][Ll][Aa][Uu][Dd][Ee].md
+**/[Cc][Ll][Aa][Uu][Dd][Ee].local.md
+**/[Gg][Ee][Mm][Ii][Nn][Ii].md
+**/.codex
+**/.claude
+**/.cursor
+**/.cursorrules
+**/.windsurf
+**/.windsurfrules
+**/.aider*
+**/.ai
+/.github/copilot-instructions.md
+/.github/instructions
+/.github/prompts
+**/*_CONTEXT.md
+**/*_HANDOFF.md
+/context
+/conversations
+/chat-history

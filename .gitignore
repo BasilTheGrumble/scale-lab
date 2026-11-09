@@ -226,3 +226,26 @@ __marimo__/
 !.env.example
 data/
 artifacts/
+
+# Local AI instructions, context, and conversation history
+[Aa][Gg][Ee][Nn][Tt][Ss].md
+[Aa][Gg][Ee][Nn][Tt][Ss].local.md
+[Cc][Ll][Aa][Uu][Dd][Ee].md
+[Cc][Ll][Aa][Uu][Dd][Ee].local.md
+[Gg][Ee][Mm][Ii][Nn][Ii].md
+.codex/
+.claude/
+.cursor/
+.cursorrules
+.windsurf/
+.windsurfrules
+.aider*
+.ai/
+.github/copilot-instructions.md
+.github/instructions/
+.github/prompts/
+*_CONTEXT.md
+*_HANDOFF.md
+/context/
+/conversations/
+/chat-history/
