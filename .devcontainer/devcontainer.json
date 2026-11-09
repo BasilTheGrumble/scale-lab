@@ -8,7 +8,8 @@
   "runServices": [
     "devcontainer",
     "postgres",
-    "kafka"
+    "kafka",
+    "rustfs"
   ],
   "workspaceFolder": "/workspaces/scale-lab",
   "shutdownAction": "stopCompose",
